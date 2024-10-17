@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Apollo Rides",
@@ -12,12 +11,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased`}>
-        {" "}
-        {children}
-        <h1>Footer</h1>
-      </body>
-    </html>
+    <div>
+      <h2>Common Nav bar</h2>
+      {children}
+    </div>
   );
 }
